@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cozy House - Our friends who are looking for a house">
+  <meta name="keywords" content="Shelter, Cozy-House, Pets, Boston, dogs, cats, Rolling-Scopes, Pre-School, project, HTML, CSS">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <script src="js/index.js"></script>
+  <title>Cozy House - Our friends who are looking for a house</title>
+</head>
+
+<body>
+  <header class="header header_internal">
+    <div class="header-block header-block_internal">
+      <a class="logo" href="index.html">
+        <h1 class="logo__name logo__name_internal">Cozy House</h1>
+        <span class="logo__slogan logo__slogan_internal">Shelter for pets in Boston</span>
+      </a>
+      <nav class="header-nav header-nav_internal">
+        <div class="overlay"></div>
+        <div class="menu-background menu-background_internal"></div>
+        <button type="button" class="header-nav__burger header-nav__burger_internal">
+          <div class="header-nav__burger-line header-nav__burger-line_internal"></div>
+        </button>
+        <ul class="header-nav__list header-nav__list_internal">
+          <li class="header-nav__item header-nav__item_internal"><a class="header-nav__link header-nav__link_internal" href="index.html">About the shelter</a></li>
+          <li class="header-nav__item header-nav__item_internal"><a class="header-nav__link header-nav__link_internal header-nav__link_active">Our pets</a></li>
+          <li class="header-nav__item header-nav__item_internal"><a class="header-nav__link header-nav__link_internal" href="index.html#help">Help the shelter</a></li>
+          <li class="header-nav__item header-nav__item_internal"><a class="header-nav__link header-nav__link_internal" href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="main main-pets">
+    <section class="pets">
+      <h2 class="pets-heading">Our Friends</h2>
+      <div class="pets-block pets-block_internal">
+        <h3 class="pets__heading pets__heading_internal">Our friends who<br>are looking for a house</h3>
+        <div class="pets-cards pets-cards_internal">
+          <ul class="pets-cards__list pets-cards__list_internal">
+          </ul>  
+        </div>
+        <div class="pets-paginator">
+          <a class="paginator paginator__first">&lt;&lt;</a>
+          <a class="paginator paginator__prev">&lt;</a>
+          <a class="paginator paginator__current paginator_current" href="noscroll" onclick="return false;"></a>
+          <a class="paginator paginator__next">&gt;</a>
+          <a class="paginator paginator__last">&gt;&gt;</a>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="pets-popup">
+      <div class="pets-popup__container">
+        <img class="pets-popup__image">
+        <div class="pets-popup__details">
+          <h3 class="pets-popup__title"></h3>
+          <h4 class="pets-popup__subtitle"></h4>
+          <h5 class="pets-popup__description"></h5>
+          <ul class="pets-popup__list">
+           <li class="pets-popup__item pets-popup__item-age"></li>
+           <li class="pets-popup__item pets-popup__item-inoculations"></li>
+           <li class="pets-popup__item pets-popup__item-disease"></li>
+           <li class="pets-popup__item pets-popup__item_parasites"></li>
+          </ul>
+        </div>
+      </div>
+      <button class="pets-popup__close"></button>
+    </dialog>
+
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="footer-frame">
+      <div class="footer__content">
+        <div class="contacts">
+          <h3 class="contacts__heading">For questions and suggestions</h3>
+          <a class="contacts__details" href="mailto:email@shelter.com">
+            <img class="contacts__details-icon" alt="icon of a letter" src="assets/icons/mail.svg" width="40" height="26">
+            <span class="contacts__details-link">email@shelter.com</span>
+          </a>
+          <a class="contacts__details" href="tel:+136745677554">
+            <img class="contacts__details-icon" alt="icon of a telephone" src="assets/icons/phone.svg" width="40" height="32">
+            <span class="contacts__details-link" >+13 674 567 75 54</span>
+          </a>
+        </div>
+        <div class="locations">
+          <h3 class="locations__heading">We are waiting for your visit</h3>
+          <a class="locations__details" href="https://www.google.com/maps/search/1+Central+Street,+Boston" target="_blank">
+            <img class="locations__details-icon" alt="icon of a pin" src="assets/icons/pin.svg" width="22" height="32">
+            <span class="locations__details-text">1 Central Street, Boston (entrance from the store)</span>
+          </a>
+          <a class="locations__details" href="https://www.google.com/maps/search/18+South+Park,+London/" target="_blank">
+            <img class="locations__details-icon" alt="icon of a pin" src="assets/icons/pin.svg" width="22" height="32">
+            <span class="locations__details-text">18 South Park, London</span>
+          </a>
+        </div>
+      </div>
+      <img class="footer-image" alt="image of a brown puppy" src="assets/Images/footer-puppy.png" width="300" height="310">
+    </div>
+  </footer>
+  <script type="module" src="js/secondary.js"></script>
+</body>
+</html>
